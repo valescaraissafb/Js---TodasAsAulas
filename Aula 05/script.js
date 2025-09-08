@@ -39,10 +39,8 @@ for (let i = 1; i <= 10; i++) {
         num += 2;
     } */
      
-        let i = 1;
+       /* let i = 1;
 do {
   console.log("seja bem-vindo!", i++);
 
-  } while (i <= 5);
-
-
+  } while (i <= 5); */
