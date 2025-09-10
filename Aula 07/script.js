@@ -1,5 +1,6 @@
 
-/*let numero = parseInt(prompt("Digite um número para ver a tabuada:"));
+/*
+let numero = parseInt(prompt("Digite um número para ver a tabuada:"));
 for (let i = 1; i <= 10; i++) {
     console.log(`${numero} x ${i} = ${numero * i}`);
 } */
@@ -25,32 +26,43 @@ do {
 } while (senha !== "1234");
 console.log("Senha correta!"); */
 
-/*let saudacao = "Olá";
+// Declare uma variável global chamada saudacao com o valor "Olá".
+function boasVindas(nome, titulo = null) {
+  let saudacao = "Olá ";
 
-function boasVindas(nome, titulo = "") {
-  if (titulo =="Dra") 
-  console.log(saudacao + titulo + "Valesca")
-
-} else { 
-    console.log(saudacao + nome )
-
-}*/
-
-
-
-/*
-  ) {
-    console.log(`Olá, ${titulo} ${nome}!`);
+  if (titulo) {
+    console.log(saudacao + titulo + " " + nome);
   } else {
-    console.log(`Olá, ${nome}!`);
+    console.log(saudacao + nome);
   }
 }
 
-boasVindas("Maria", "Dra.");  
-boasVindas("Maria");         
+// Testes
+boasVindas("Valesca", "Dra"); // Olá Dra Valesca
+boasVindas("Valesca");        // Olá Valesca
 
 
-function mostrarMensagem() {
+
+
+/*function boasVindas(nome, titulo) {
+  if (titulo) {
+    return `Olá ${titulo} ${nome}`;
+  } else {
+    return `Olá ${nome}`;
+  }
+}
+
+
+console.log(boasVindas("Maria", "Dra")); 
+console.log(boasVindas("Maria"));       
+
+
+
+
+
+
+
+/* function mostrarMensagem() {
   let mensagem = "Estou gostando muito do curso!";
   console.log(mensagem);
 }
@@ -71,11 +83,7 @@ console.log(frutas); */
 //almoco.sort()
 console.log(almoco);*/
 
-let listaCompras = ["frutas", "carnes", "produtos de higiene"]
+/*let listaCompras = ["frutas", "carnes", "produtos de higiene"]
 for(i = 0; i < listaCompras.length; i++ )
-console.log("- " + listaCompras[i])
-
-
-
-
+console.log("- " + listaCompras[i])*/
 
