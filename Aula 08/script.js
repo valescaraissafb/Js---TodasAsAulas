@@ -1,4 +1,4 @@
-/*//Crie uma função que receba dois números e retorne a soma deles.
+//Crie uma função que receba dois números e retorne a soma deles.
 function somarNumeros(a, b) {
   return a + b;
 }
@@ -59,4 +59,4 @@ if (isNaN(numero)) {
     console.log(`${numero} x ${i} = ${numero * i}`);
   }
 }
-*/
+

@@ -38,8 +38,8 @@ function boasVindas(nome, titulo = null) {
 }
 
 // Testes
-boasVindas("Valesca", "Dra"); // Olá Dra Valesca
-boasVindas("Valesca");        // Olá Valesca
+boasVindas("Valesca", "Dra"); 
+boasVindas("Valesca");       
 
 
 
