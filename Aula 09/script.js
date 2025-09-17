@@ -94,7 +94,7 @@ produto.vender(10);
 produto.repor(20);   */
 
 //Crie um onjeto contaBancaria com (titular, saldo) e metodos (depositar(valor)-> aumenta saldo, sacar(valor)-> diminui o saldo(se houver saldo suficiente).
-let contaBancaria = {
+/*let contaBancaria = {
   titular: "Raissa França",
   saldo: 1000,
 
@@ -125,4 +125,6 @@ let contaBancaria = {
  contaBancaria.exibirSaldo();     
 contaBancaria.depositar(500);    
 contaBancaria.sacar(200);       
-contaBancaria.exibirSaldo();    
+contaBancaria.exibirSaldo();    */
+
+
