@@ -171,7 +171,7 @@ console.log("Produtos filtrados (preço > 50):", filtrarCaros(carrinho)); */
 // Criar uma função filtrarAprovados(lista) que retorne apenas os alunos com situação "Aprovado".
 
 // Array para armazenar os alunos cadastrados
-const listaAlunos = [];
+/*const listaAlunos = [];
 
 // Função para cadastrar um aluno, retorna um objeto aluno
 function cadastrarAluno(nome,idade,curso,nota) { 
@@ -238,4 +238,6 @@ console.log(`\n* Média das notas: ${media.toFixed(2)}`)
 // Filtrar e listar alunos aprovados
 let alunosAprovados = filtrarAprovados(listaAlunos);
 console.log("\n* Alunos Aprovados *");
-listarAlunos(alunosAprovados);
+listarAlunos(alunosAprovados); */
+
+
