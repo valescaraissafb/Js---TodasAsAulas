@@ -185,7 +185,7 @@ console.log(livroProcurado);*/
 
 //Crie um objeto biblioteca com:
 //propriedade livros(array de objetos com titulo e disponivel)
-const biblioteca = {
+/*const biblioteca = {
   livros: [
     { titulo: "Querido John", disponivel: true },
     { titulo: "O direito de ser feliz", disponivel: true },
@@ -233,7 +233,7 @@ biblioteca.emprestar("Querido John");
 biblioteca.devolver("Querido John");
 biblioteca.listarDisponiveis();*/
 
-console.log(">>> Listando livros disponíveis inicialmente:");
+/*console.log(">>> Listando livros disponíveis inicialmente:");
 biblioteca.listarDisponiveis();
 
 console.log("\n>>> Tentando emprestar 'Querido John':");
@@ -249,8 +249,98 @@ console.log("\n>>> Devolvendo 'Harry Potter e o enigma do princípe':");
 biblioteca.devolver("Harry Potter e o enigma do princípe");
 
 console.log("\n>>> Listando livros disponíveis após devolução:");
-biblioteca.listarDisponiveis();
+biblioteca.listarDisponiveis(); */
 
 
+/*5. Crie um array chamado estoque, onde cada item é um objeto com: produto, quantidade, preco.
+// Crie uma função que calcule o valor total do estoque.
+// Crie outra função que permita vender um produto (diminuindo sua quantidade).
+let estoque = [
+    {Produto:"Blusa", quantidade: 50, preco: 25},
+    {Produto:"Short", quantidade: 35, preco: 40},
+    {Produto:"Sapato", quantidade: 15, preco: 120},
+    {Produto:"Boné", quantidade: 22, preco: 15 },
+]; 
+//function valorTotalEstoque(estoque) {
+  //return estoque.reduce((total, item) => total + (item.quantidade * item.preco), 0); }
+function calcularValorTotal(estoque) {
+    let total = 0;
+    for (let item of estoque) {
+        total += item.quantidade * item.preco;
+    }
+    return total;
+}
+console.log("O valor total do estoque é:", calcularValorTotal(estoque)); 
+ function venderProduto(estoque, nomeProduto, quantidadeVendida) {
+  const produto = estoque.find(item => item.Produto === nomeProduto);
+  if (!produto) {
+    console.log("Produto não encontrado.");
+    return false;
+  }
+  if (produto.quantidade < quantidadeVendida) {
+    console.log("Quantidade insuficiente no estoque.");
+    return false;
+  }
+  produto.quantidade -= quantidadeVendida;
+  console.log("Venda realizada. Estoque atualizado:");
+  console.log(estoque);
+  return true;
+}
+venderProduto(estoque, "Blusa", 10);
+console.log("Valor total do estoque: R$", valorTotalEstoque(estoque));*/
+
+
+
+// Objeto carrinho com lista de itens e funções
+/*const carrinho = {
+  itens: [],
+
+  // Adicionar item (nome, preço, quantidade)
+  adicionarItem(nome, preco, quantidade = 1) {
+    const itemExistente = this.itens.find(item => item.nome === nome);
+    if (itemExistente) {
+      itemExistente.quantidade += quantidade;
+    } else {
+      this.itens.push({ nome, preco, quantidade });
+    }
+  },
+
+  // Remover item pelo nome
+  removerItem(nome) {
+    this.itens = this.itens.filter(item => item.nome !== nome);
+  },
+
+  // Calcular valor total do carrinho
+  calcularTotal() {
+    return this.itens.reduce((total, item) => total + item.preco * item.quantidade, 0);
+  },
+
+  // Listar itens no console
+  listarItens() {
+    if (this.itens.length === 0) {
+      console.log("Carrinho vazio");
+      return;
+    }
+    console.log("Itens no carrinho:");
+    this.itens.forEach(item => {
+      console.log(`- ${item.nome}: R$${item.preco.toFixed(2)} x ${item.quantidade}`);
+    });
+  }
+};
+
+// Exemplo de uso
+carrinho.adicionarItem("Camisa", 50, 2);
+carrinho.adicionarItem("Calça", 80, 1);
+carrinho.adicionarItem("Camisa", 50, 1); // adiciona mais uma camisa
+
+carrinho.listarItens();
+
+console.log("Total: R$", carrinho.calcularTotal().toFixed(2));
+
+carrinho.removerItem("Calça");
+
+carrinho.listarItens();
+
+console.log("Total após remoção: R$", carrinho.calcularTotal().toFixed(2)); */
 
 
